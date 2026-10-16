@@ -1380,15 +1380,951 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
+    },
+    "press_recognition": {
+      "type": "section",
+      "blocks": {
+        "press_header": {
+          "type": "group",
+          "name": "Press Header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 4,
+            "width": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 12,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "press_tag": {
+              "type": "text",
+              "settings": {
+                "text": "<p>FEATURED IN</p>",
+                "type_preset": "h6",
+                "font": "var(--font-accent--family)",
+                "alignment": "center",
+                "text_color": "{{ settings.color_palette.color1 }}"
+              }
+            }
+          },
+          "block_order": [
+            "press_tag"
+          ]
+        },
+        "press_grid": {
+          "type": "group",
+          "name": "Press Quotes",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "stretch",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "press_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p1_logo": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"letter-spacing: 0.25em;\"><strong>V O G U E</strong></p>",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "center",
+                    "text_color": "{{ settings.color_palette.foreground }}"
+                  }
+                },
+                "p1_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><em>\"The new benchmark for aesthetic, studio-grade fitness design for women.\"</em></p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "center",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p1_logo",
+                "p1_quote"
+              ]
+            },
+            "press_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p2_logo": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"letter-spacing: 0.25em;\"><strong>E L L E</strong></p>",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "center",
+                    "text_color": "{{ settings.color_palette.foreground }}"
+                  }
+                },
+                "p2_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><em>\"Equipment so sculpted and beautiful you will proudly keep it on display.\"</em></p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "center",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p2_logo",
+                "p2_quote"
+              ]
+            },
+            "press_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p3_logo": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"letter-spacing: 0.15em;\"><strong>WELL+GOOD</strong></p>",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "center",
+                    "text_color": "{{ settings.color_palette.foreground }}"
+                  }
+                },
+                "p3_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><em>\"Intentionally engineered for female ergonomics, floor safety, and compact living.\"</em></p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "center",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p3_logo",
+                "p3_quote"
+              ]
+            },
+            "press_4": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p4_logo": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"letter-spacing: 0.12em;\"><strong>WOMEN'S HEALTH</strong></p>",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "center",
+                    "text_color": "{{ settings.color_palette.foreground }}"
+                  }
+                },
+                "p4_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><em>\"Uncompromising durability meets graceful functional movement.\"</em></p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "center",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p4_logo",
+                "p4_quote"
+              ]
+            }
+          },
+          "block_order": [
+            "press_1",
+            "press_2",
+            "press_3",
+            "press_4"
+          ]
+        }
+      },
+      "block_order": [
+        "press_header",
+        "press_grid"
+      ],
+      "name": "Press Recognition",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "border": "none",
+        "padding-block-start": 32,
+        "padding-block-end": 32
+      }
+    },
+    "heravyn_difference": {
+      "type": "section",
+      "blocks": {
+        "diff_header": {
+          "type": "group",
+          "name": "Difference Header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 8,
+            "width": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "diff_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>The HERAVYN Standard</h2>",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "alignment": "center"
+              }
+            },
+            "diff_subtitle": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Built with intentionality, non-toxic materials, and lifelong durability.</p>",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "diff_title",
+            "diff_subtitle"
+          ]
+        },
+        "diff_grid": {
+          "type": "group",
+          "name": "Pillars Comparison",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "stretch",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "diff_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "d1_badge": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>MATERIALS</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-accent--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "d1_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>Recycled Cast Iron</h4>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)"
+                  }
+                },
+                "d1_body": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Indestructible single-pour solid iron coated in soft-touch matte powder coat. Zero toxic vinyl fillings or cracking cement.</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "d1_badge",
+                "d1_title",
+                "d1_body"
+              ]
+            },
+            "diff_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "d2_badge": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>BIOMECHANICS</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-accent--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "d2_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>Proportioned Knurling</h4>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)"
+                  }
+                },
+                "d2_body": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Grip diameters calibrated specifically for women's hands to prevent wrist fatigue, calluses, and compromised form during heavy lifting.</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "d2_badge",
+                "d2_title",
+                "d2_body"
+              ]
+            },
+            "diff_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "d3_badge": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>SUSTAINABILITY</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-accent--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "d3_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>Eco-Certified Rubber</h4>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)"
+                  }
+                },
+                "d3_body": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Naturally biodegradable, slip-resistant tree rubber and hypoallergenic fabric loop bands that never pinch skin or roll over.</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "d3_badge",
+                "d3_title",
+                "d3_body"
+              ]
+            },
+            "diff_4": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "gap": 8,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "d4_badge": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>CONFIDENCE</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-accent--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "d4_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h4>30-Day Ritual Trial</h4>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)"
+                  }
+                },
+                "d4_body": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Experience HERAVYN in your daily routine for 30 days. Full refund with prepaid domestic returns if you aren't completely captivated.</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "d4_badge",
+                "d4_title",
+                "d4_body"
+              ]
+            }
+          },
+          "block_order": [
+            "diff_1",
+            "diff_2",
+            "diff_3",
+            "diff_4"
+          ]
+        }
+      },
+      "block_order": [
+        "diff_header",
+        "diff_grid"
+      ],
+      "name": "The HERAVYN Standard",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "border": "none",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "community_reviews": {
+      "type": "section",
+      "blocks": {
+        "rev_header": {
+          "type": "group",
+          "name": "Reviews Header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 8,
+            "width": "fill",
+            "padding-block-start": 0,
+            "padding-block-end": 28,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "rev_tag": {
+              "type": "text",
+              "settings": {
+                "text": "<p>COMMUNITY RITUALS</p>",
+                "type_preset": "h6",
+                "font": "var(--font-accent--family)",
+                "alignment": "center",
+                "text_color": "{{ settings.color_palette.color1 }}"
+              }
+            },
+            "rev_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Real Movement. Real Results.</h2>",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "alignment": "center"
+              }
+            },
+            "rev_subtitle": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Over 12,000 women have elevated their daily training with HERAVYN essentials.</p>",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "rev_tag",
+            "rev_title",
+            "rev_subtitle"
+          ]
+        },
+        "rev_grid": {
+          "type": "group",
+          "name": "Review Cards Grid",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "stretch",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "rev_card_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "r1_stars": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"color: #B87570; font-size: 1.125rem; letter-spacing: 2px;\">★★★★★</p>",
+                    "type_preset": "paragraph"
+                  }
+                },
+                "r1_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>\"The 10 lb Sculpt Dumbbells completely revolutionized my morning routine. The knurled grip never slips even during intense sweat sessions, and the matte finish looks stunning in my living room.\"</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                },
+                "r1_author": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Elena R.</strong><br><span style=\"font-size: 0.8125rem; opacity: 0.75;\">Certified Pilates & Reformer Instructor</span></p>",
+                    "type_preset": "paragraph"
+                  }
+                }
+              },
+              "block_order": [
+                "r1_stars",
+                "r1_quote",
+                "r1_author"
+              ]
+            },
+            "rev_card_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "r2_stars": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"color: #B87570; font-size: 1.125rem; letter-spacing: 2px;\">★★★★★</p>",
+                    "type_preset": "paragraph"
+                  }
+                },
+                "r2_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>\"Finally, fabric bands that don't roll down or pinch your legs! The resistance curve is so smooth. Six months of daily glute activations and they haven't lost any elasticity.\"</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                },
+                "r2_author": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Dr. Maya V.</strong><br><span style=\"font-size: 0.8125rem; opacity: 0.75;\">Physical Therapist & Strength Coach</span></p>",
+                    "type_preset": "paragraph"
+                  }
+                }
+              },
+              "block_order": [
+                "r2_stars",
+                "r2_quote",
+                "r2_author"
+              ]
+            },
+            "rev_card_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "r3_stars": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"color: #B87570; font-size: 1.125rem; letter-spacing: 2px;\">★★★★★</p>",
+                    "type_preset": "paragraph"
+                  }
+                },
+                "r3_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>\"The Align Studio Mat provides just the right firmness for knee and wrist support. The natural tree rubber grip is unmatched, and the leather harness makes travel seamless.\"</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                },
+                "r3_author": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Chloe T.</strong><br><span style=\"font-size: 0.8125rem; opacity: 0.75;\">Movement & Breathwork Artist</span></p>",
+                    "type_preset": "paragraph"
+                  }
+                }
+              },
+              "block_order": [
+                "r3_stars",
+                "r3_quote",
+                "r3_author"
+              ]
+            },
+            "rev_card_4": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_color": "{{ settings.color_palette.color2 }}",
+                "border": "none",
+                "border_radius": 16,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 20,
+                "padding-inline-end": 20
+              },
+              "blocks": {
+                "r4_stars": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p style=\"color: #B87570; font-size: 1.125rem; letter-spacing: 2px;\">★★★★★</p>",
+                    "type_preset": "paragraph"
+                  }
+                },
+                "r4_quote": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>\"The wave massage roller completely relieved chronic lower back and thoracic tightness after training. True commercial gym quality in a gorgeous minimalist palette.\"</p>",
+                    "type_preset": "rte",
+                    "font_size": "0.9375rem"
+                  }
+                },
+                "r4_author": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Camille S.</strong><br><span style=\"font-size: 0.8125rem; opacity: 0.75;\">Marathon Athlete & Mother</span></p>",
+                    "type_preset": "paragraph"
+                  }
+                }
+              },
+              "block_order": [
+                "r4_stars",
+                "r4_quote",
+                "r4_author"
+              ]
+            }
+          },
+          "block_order": [
+            "rev_card_1",
+            "rev_card_2",
+            "rev_card_3",
+            "rev_card_4"
+          ]
+        }
+      },
+      "block_order": [
+        "rev_header",
+        "rev_grid"
+      ],
+      "name": "Community Reviews",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "border": "none",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
     "hero_heravyn",
     "smart_trust_bar",
     "smart_marquee_ticker",
+    "press_recognition",
     "shop_by_category",
     "product_list_fa6P9H",
+    "heravyn_difference",
     "brand_story_heravyn",
+    "community_reviews",
     "faq_heravyn",
     "newsletter_social_section"
   ]

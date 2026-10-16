@@ -13,7 +13,28 @@
         type="image/png"
         href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
       >
+      <link
+        rel="apple-touch-icon"
+        href="{{ settings.favicon | image_url: width: 180, height: 180 }}"
+      >
     {%- else -%}
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="{{ 'heravyn-favicon-32x32.png' | asset_url }}"
+      >
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="{{ 'heravyn-favicon-192x192.png' | asset_url }}"
+      >
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="{{ 'apple-touch-icon.png' | asset_url }}"
+      >
       <link
         rel="icon"
         type="image/svg+xml"
@@ -26,6 +47,7 @@
     {%- render 'meta-tags' -%}
     {%- render 'stylesheets' -%}
     {%- render 'card-hover-effect-styles' -%}
+    {%- render 'cookie-consent-styles' -%}
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-palette' -%}

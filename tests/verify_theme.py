@@ -309,6 +309,10 @@ def run_suite_5():
     required_assets = [
         "heravyn-logo.svg",
         "heravyn-favicon.svg",
+        "heravyn-favicon.png",
+        "heravyn-favicon-32x32.png",
+        "heravyn-favicon-192x192.png",
+        "apple-touch-icon.png",
         "hero-cover.jpg",
         "cat-strength.jpg",
         "cat-pilates.jpg",
@@ -330,10 +334,21 @@ def run_suite_5():
     # Check fallback wiring
     with open(os.path.join(PROJECT_ROOT, "layout", "theme.liquid"), "r", encoding="utf-8") as f:
         theme_liquid = f.read()
-    if "heravyn-favicon.svg" in theme_liquid:
-        report_pass(s, "layout/theme.liquid: Smart favicon fallback wired to heravyn-favicon.svg.")
+    if "heravyn-favicon-32x32.png" in theme_liquid and "heravyn-favicon.svg" in theme_liquid:
+        report_pass(s, "layout/theme.liquid: Multi-format PNG & SVG favicon fallbacks wired.")
     else:
         report_fail(s, "layout/theme.liquid: Favicon fallback missing!")
+
+    if "cookie-consent-styles" in theme_liquid:
+        report_pass(s, "layout/theme.liquid: Dedicated cookie consent styling snippet rendered.")
+    else:
+        report_fail(s, "layout/theme.liquid: Cookie consent styling snippet NOT rendered!")
+
+    cookie_css_path = os.path.join(PROJECT_ROOT, "snippets", "cookie-consent-styles.liquid")
+    if os.path.exists(cookie_css_path) and os.path.getsize(cookie_css_path) > 0:
+        report_pass(s, f"snippets/cookie-consent-styles.liquid exists ({os.path.getsize(cookie_css_path):,} bytes).")
+    else:
+        report_fail(s, "snippets/cookie-consent-styles.liquid missing or empty!")
 
     with open(os.path.join(PROJECT_ROOT, "blocks", "_header-logo.liquid"), "r", encoding="utf-8") as f:
         logo_liquid = f.read()
@@ -367,9 +382,12 @@ def run_suite_5():
         "hero_heravyn",
         "smart_trust_bar",
         "smart_marquee_ticker",
+        "press_recognition",
         "shop_by_category",
         "product_list_fa6P9H",
+        "heravyn_difference",
         "brand_story_heravyn",
+        "community_reviews",
         "faq_heravyn",
         "newsletter_social_section"
     ]

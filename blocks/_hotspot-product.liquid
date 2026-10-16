@@ -44,7 +44,13 @@
       {% if hotspot_product.featured_image != blank %}
         {% render 'image', image: hotspot_product.featured_image, class: 'hotspot-dialog__product-image' %}
       {% else %}
-        {{ 'product-apparel-1' | placeholder_svg_tag: 'hotspot-dialog__placeholder-product-image' }}
+        <img
+          src="{{ 'prod-dumbbells.jpg' | asset_url }}"
+          alt="{{ hotspot_product_title }}"
+          class="hotspot-dialog__product-image"
+          style="object-fit: cover; width: 100%; height: 100%;"
+          loading="lazy"
+        >
       {% endif %}
       <div class="hotspot-dialog__product-content">
         <div class="hotspot-dialog__product-info">

@@ -60,7 +60,13 @@
       {% if section.settings.image != blank %}
         {% render 'image', image: section.settings.image, class: 'hotspots__background-image' %}
       {% else %}
-        {{ 'hero-apparel-1' | placeholder_svg_tag: 'hotspots__background-image' }}
+        <img
+          src="{{ 'hero-cover.jpg' | asset_url }}"
+          alt="HERAVYN Equipment Hotspots"
+          class="hotspots__background-image"
+          style="object-fit: cover; width: 100%; height: 100%;"
+          loading="lazy"
+        >
       {% endif %}
 
       <div class="hotspots-container">

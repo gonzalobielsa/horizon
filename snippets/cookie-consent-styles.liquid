@@ -1,0 +1,289 @@
+{%- doc -%}
+  HERAVYN Luxury Fitness Cookie Consent & Customer Privacy Styling
+  Overrides Shopify Customer Privacy banner with brand tokens:
+  Warm Ivory (#FAF7F3), Deep Charcoal (#252525), Dusty Rose (#B87570), Soft Beige (#E9DED5).
+{%- enddoc -%}
+
+<style id="heravyn-cookie-consent-styles">
+  /* ==========================================================================
+     HERAVYN CUSTOMER PRIVACY & COOKIE CONSENT BANNER STYLING
+     ========================================================================== */
+
+  /* Main Banner Wrapper */
+  #shopify-pc__banner,
+  section#shopify-pc__banner,
+  .shopify-pc__banner,
+  #shopify-privacy-banner,
+  #shopify-customer-privacy-banner,
+  .shopify-customer-privacy-banner,
+  .cookie-banner,
+  [js-cookie-banner="banner"] {
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 24px !important;
+    right: 24px !important;
+    max-width: 580px !important;
+    margin: 0 auto !important;
+    background: rgba(250, 247, 243, 0.98) !important;
+    background-color: #FAF7F3 !important;
+    color: #252525 !important;
+    border: 1px solid #E9DED5 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 36px -4px rgba(37, 37, 37, 0.16), 0 4px 12px rgba(37, 37, 37, 0.08) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    padding: 22px 26px !important;
+    z-index: 2147483640 !important;
+    box-sizing: border-box !important;
+    font-family: var(--font-body--family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    animation: heravynSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+  }
+
+  @keyframes heravynSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Inner Dialog & Layout */
+  .shopify-pc__banner__dialog,
+  #shopify-pc__banner__dialog {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  /* Title / Heading */
+  #shopify-pc__banner__body-title,
+  .shopify-pc__banner__title,
+  .shopify-pc__banner__dialog h2,
+  .shopify-pc__banner__dialog h3 {
+    font-family: var(--font-heading--family), serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: #252525 !important;
+    margin: 0 0 4px 0 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Body Text */
+  .shopify-pc__banner__body,
+  .shopify-pc__banner__body p,
+  .shopify-pc__banner__dialog p,
+  #shopify-pc__banner p {
+    font-size: 0.875rem !important;
+    line-height: 1.55 !important;
+    color: #404040 !important;
+    margin: 0 !important;
+  }
+
+  /* Links */
+  .shopify-pc__banner a,
+  .shopify-pc__banner__dialog a,
+  #shopify-pc__banner a {
+    color: #B87570 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+    font-weight: 500 !important;
+    transition: color 0.2s ease !important;
+  }
+
+  .shopify-pc__banner a:hover,
+  .shopify-pc__banner__dialog a:hover {
+    color: #9C5E5A !important;
+  }
+
+  /* Action Buttons Container */
+  .shopify-pc__banner__buttons,
+  .shopify-pc__banner__actions,
+  #shopify-pc__banner__buttons,
+  .shopify-pc__banner__dialog .shopify-pc__banner__btn-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 6px !important;
+  }
+
+  /* Base Button Styling */
+  .shopify-pc__banner button,
+  .shopify-pc__banner__dialog button,
+  #shopify-pc__banner button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 42px !important;
+    padding: 0 22px !important;
+    border-radius: 14px !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-family: inherit !important;
+  }
+
+  /* Accept Button (Primary HERAVYN Accent) */
+  button.shopify-pc__banner__btn-accept,
+  #shopify-pc__banner__btn-accept,
+  .shopify-pc__banner__btn-accept,
+  button[data-action="accept"],
+  .cookie-banner button.primary {
+    background-color: #B87570 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #B87570 !important;
+  }
+
+  button.shopify-pc__banner__btn-accept:hover,
+  #shopify-pc__banner__btn-accept:hover,
+  .shopify-pc__banner__btn-accept:hover {
+    background-color: #9C5E5A !important;
+    border-color: #9C5E5A !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(184, 117, 112, 0.25) !important;
+  }
+
+  /* Decline Button (Secondary Neutral) */
+  button.shopify-pc__banner__btn-decline,
+  #shopify-pc__banner__btn-decline,
+  .shopify-pc__banner__btn-decline,
+  button[data-action="decline"],
+  .cookie-banner button.secondary {
+    background-color: transparent !important;
+    color: #252525 !important;
+    border: 1px solid #D5C9BE !important;
+  }
+
+  button.shopify-pc__banner__btn-decline:hover,
+  #shopify-pc__banner__btn-decline:hover,
+  .shopify-pc__banner__btn-decline:hover {
+    background-color: #E9DED5 !important;
+    border-color: #252525 !important;
+    color: #252525 !important;
+  }
+
+  /* Manage Preferences Button */
+  button.shopify-pc__banner__btn-manage-prefs,
+  button.shopify-pc__banner__btn-preferences,
+  #shopify-pc__banner__btn-manage-prefs {
+    background: transparent !important;
+    color: #555555 !important;
+    border: none !important;
+    height: auto !important;
+    padding: 4px 8px !important;
+    font-size: 0.8125rem !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+
+  button.shopify-pc__banner__btn-manage-prefs:hover {
+    color: #252525 !important;
+  }
+
+  /* ==========================================================================
+     PREFERENCES MODAL (Manage Cookies Dialog)
+     ========================================================================== */
+  #shopify-pc__prefs__dialog,
+  .shopify-pc__prefs__dialog,
+  .shopify-pc__modal,
+  .shopify-pc__modal__dialog {
+    background: #FAF7F3 !important;
+    color: #252525 !important;
+    border: 1px solid #E9DED5 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 24px 60px rgba(37, 37, 37, 0.22) !important;
+    max-width: 620px !important;
+    padding: 28px !important;
+    font-family: var(--font-body--family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+
+  .shopify-pc__prefs__dialog h2,
+  .shopify-pc__modal__dialog h2 {
+    font-family: var(--font-heading--family), serif !important;
+    color: #252525 !important;
+    font-size: 1.35rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Toggle Switches inside Preferences Modal */
+  .shopify-pc__prefs__toggle input:checked + .shopify-pc__prefs__slider,
+  input[type="checkbox"]:checked + .shopify-pc__slider {
+    background-color: #B87570 !important;
+  }
+
+  /* Save Preferences Button inside Modal */
+  .shopify-pc__prefs__dialog button.shopify-pc__prefs__btn-save,
+  .shopify-pc__modal button.primary {
+    background-color: #B87570 !important;
+    color: #FFFFFF !important;
+    border-radius: 14px !important;
+    border: 1px solid #B87570 !important;
+    height: 42px !important;
+    padding: 0 24px !important;
+    font-weight: 600 !important;
+  }
+
+  .shopify-pc__prefs__dialog button.shopify-pc__prefs__btn-save:hover {
+    background-color: #9C5E5A !important;
+    border-color: #9C5E5A !important;
+  }
+
+  /* ==========================================================================
+     BUYER CONSENT IN CART / ACCELERATED CHECKOUT
+     ========================================================================== */
+  #shopify-buyer-consent {
+    background-color: #FAF7F3 !important;
+    border: 1px solid #E9DED5 !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    margin: 12px 0 !important;
+    font-size: 0.8125rem !important;
+    color: #555555 !important;
+  }
+
+  #shopify-buyer-consent a {
+    color: #B87570 !important;
+    text-decoration: underline !important;
+  }
+
+  /* ==========================================================================
+     MOBILE RESPONSIVENESS
+     ========================================================================== */
+  @media screen and (max-width: 640px) {
+    #shopify-pc__banner,
+    section#shopify-pc__banner,
+    .shopify-pc__banner {
+      bottom: 12px !important;
+      left: 12px !important;
+      right: 12px !important;
+      max-width: calc(100% - 24px) !important;
+      padding: 18px 20px !important;
+      border-radius: 16px !important;
+    }
+
+    .shopify-pc__banner__buttons,
+    #shopify-pc__banner__buttons {
+      flex-direction: column !important;
+      width: 100% !important;
+    }
+
+    .shopify-pc__banner button,
+    #shopify-pc__banner button {
+      width: 100% !important;
+      justify-content: center !important;
+    }
+  }
+</style>
