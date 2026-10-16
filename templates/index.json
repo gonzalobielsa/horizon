@@ -9,57 +9,122 @@
  */
 {
   "sections": {
-    "hero_jVaWmY": {
+    "hero_heravyn": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
+        "hero_heading": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<h1>STRONGER YOU.</h1>",
             "width": "fit-content",
             "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "display-tight",
+            "letter_spacing": "heading-normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#FFFFFF",
+            "background": false
+          },
+          "blocks": {}
+        },
+        "hero_subcopy": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Elevate your training with premium functional strength and intentional movement equipment thoughtfully engineered for women.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
+            "font_size": "1.125rem",
+            "line_height": "body-loose",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "{{ settings.color_palette.background }}",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
+            "text_color": "#FAF7F3",
+            "background": false
+          },
+          "blocks": {}
+        },
+        "hero_cta_group": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 16,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "rgba(0, 0, 0, 0)",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+          "blocks": {
+            "cta_all": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Shop All Equipment",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.color1 }}",
+                "custom_button_text": "#FFFFFF",
+                "custom_button_border": "{{ settings.color_palette.color1 }}",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "cta_pilates": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Explore Pilates & Glutes",
+                "link": "shopify://collections/pilates-glutes",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "rgba(255, 255, 255, 0.15)",
+                "custom_button_text": "#FAF7F3",
+                "custom_button_border": "#FAF7F3",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
+          "block_order": [
+            "cta_all",
+            "cta_pilates"
+          ]
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "hero_heading",
+        "hero_subcopy",
+        "hero_cta_group"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -69,23 +134,387 @@
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
         "align_baseline": true,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "full-width",
+        "section_height": "large",
         "toggle_overlay": true,
         "overlay_color": "#12121266",
-        "overlay_style": "solid",
+        "overlay_style": "gradient",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-start": 120,
+        "padding-block-end": 120
+      }
+    },
+    "shop_by_category": {
+      "type": "section",
+      "blocks": {
+        "category_header": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "category_title": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Shop by Category</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false
+              },
+              "blocks": {}
+            },
+            "category_subtitle": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Purpose-built equipment sculpted for every discipline of your routine.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "category_title",
+            "category_subtitle"
+          ]
+        },
+        "category_grid": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "stretch",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card_strength": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "link": "shopify://collections/strength",
+                "padding-block-start": 28,
+                "padding-block-end": 28,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "t1_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3>Strength</h3>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t1_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Dumbbells, barbells, kettlebells, weight plates</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t1_btn": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Explore Strength",
+                    "link": "shopify://collections/strength",
+                    "style_class": "button-unstyled"
+                  }
+                }
+              },
+              "block_order": [
+                "t1_heading",
+                "t1_sub",
+                "t1_btn"
+              ]
+            },
+            "card_pilates": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "link": "shopify://collections/pilates-glutes",
+                "padding-block-start": 28,
+                "padding-block-end": 28,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "t2_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3>Pilates & Glutes</h3>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t2_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Resistance bands, ankle weights, sliders, mats</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t2_btn": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Explore Pilates & Glutes",
+                    "link": "shopify://collections/pilates-glutes",
+                    "style_class": "button-unstyled"
+                  }
+                }
+              },
+              "block_order": [
+                "t2_heading",
+                "t2_sub",
+                "t2_btn"
+              ]
+            },
+            "card_homeworkouts": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "link": "shopify://collections/home-workouts",
+                "padding-block-start": 28,
+                "padding-block-end": 28,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "t3_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3>Home Workouts</h3>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t3_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Compact benches, pull-up systems, adjustable sets</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t3_btn": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Explore Home Workouts",
+                    "link": "shopify://collections/home-workouts",
+                    "style_class": "button-unstyled"
+                  }
+                }
+              },
+              "block_order": [
+                "t3_heading",
+                "t3_sub",
+                "t3_btn"
+              ]
+            },
+            "card_recovery": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "space-between",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "space-between",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "link": "shopify://collections/recovery",
+                "padding-block-start": 28,
+                "padding-block-end": 28,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "t4_heading": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3>Recovery</h3>",
+                    "type_preset": "h4",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t4_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Foam rollers, massage balls, acupressure, straps</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "left"
+                  }
+                },
+                "t4_btn": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Explore Recovery",
+                    "link": "shopify://collections/recovery",
+                    "style_class": "button-unstyled"
+                  }
+                }
+              },
+              "block_order": [
+                "t4_heading",
+                "t4_sub",
+                "t4_btn"
+              ]
+            }
+          },
+          "block_order": [
+            "card_strength",
+            "card_pilates",
+            "card_homeworkouts",
+            "card_recovery"
+          ]
+        }
+      },
+      "block_order": [
+        "category_header",
+        "category_grid"
+      ],
+      "name": "t:names.section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.color2 }}",
+        "border": "none",
+        "border_radius": 0,
+        "padding-block-start": 56,
+        "padding-block-end": 56
       }
     },
     "product_list_fa6P9H": {
@@ -111,12 +540,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
             "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -127,24 +551,18 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>Curated Essentials</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "background": false
               },
               "blocks": {}
             },
@@ -152,7 +570,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "View All Equipment",
                 "open_in_new_tab": false,
                 "style_class": "button-unstyled",
                 "width": "fit-content",
@@ -173,7 +591,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 6,
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -189,14 +607,7 @@
               "name": "t:names.product_card_media",
               "settings": {
                 "image_ratio": "adapt",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "border": "none"
               },
               "blocks": {}
             },
@@ -215,8 +626,6 @@
                 "case": "none",
                 "wrap": "pretty",
                 "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
                 "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -263,20 +672,202 @@
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "columns_gap": 16,
+        "rows_gap": 28,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
+    "brand_story_heravyn": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image_position": "cover"
+          }
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 24
+          },
+          "blocks": {
+            "story_caption": {
+              "type": "text",
+              "name": "t:names.caption",
+              "settings": {
+                "text": "<p>THE HERAVYN PHILOSOPHY</p>",
+                "type_preset": "h6",
+                "font": "var(--font-accent--family)",
+                "alignment": "left"
+              }
+            },
+            "story_group": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "gap": 12,
+                "height": "fit"
+              },
+              "blocks": {
+                "story_heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Empowering Women Through Functional Strength & Intentional Movement</h2>",
+                    "type_preset": "h2",
+                    "font": "var(--font-heading--family)",
+                    "alignment": "left"
+                  }
+                },
+                "story_body": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>HERAVYN was created to challenge the ordinary in women's fitness. We design studio-grade, functional strength equipment that blends uncompromising durability with sculptured, intentional aesthetics. Whether lifting heavy or moving with poise, elevate your ritual with tools built to last.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "alignment": "left",
+                    "max_width": "normal"
+                  }
+                }
+              },
+              "block_order": [
+                "story_heading",
+                "story_body"
+              ]
+            },
+            "story_button": {
+              "type": "button",
+              "settings": {
+                "label": "Read Our Story",
+                "link": "shopify://pages/about",
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.color1 }}",
+                "custom_button_text": "#FFFFFF",
+                "custom_button_border": "{{ settings.color_palette.color1 }}"
+              }
+            }
+          },
+          "block_order": [
+            "story_caption",
+            "story_group",
+            "story_button"
+          ]
+        }
+      },
+      "name": "t:names.media_with_content",
+      "settings": {
+        "media_position": "left",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.color2 }}",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "newsletter_social_section": {
+      "type": "section",
+      "blocks": {
+        "nl_tag": {
+          "type": "text",
+          "settings": {
+            "text": "<p>COMMUNITY & EMPOWERMENT</p>",
+            "type_preset": "h6",
+            "font": "var(--font-accent--family)",
+            "alignment": "center"
+          }
+        },
+        "nl_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Join the HERAVYN Collective</h2>",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "alignment": "center"
+          }
+        },
+        "nl_subcopy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Receive exclusive training guides, private collection drops, and wellness inspiration directly to your inbox. STRONGER YOU begins here.</p>",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "alignment": "center",
+            "max_width": "narrow"
+          }
+        },
+        "nl_form": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 55,
+            "width_mobile": "fill",
+            "border_style": "all",
+            "input_style": "custom",
+            "border_width": 1,
+            "border_radius": 100,
+            "input_background_color": "{{ settings.color_palette.background }}",
+            "input_border_color": "{{ settings.color_palette.color3 }}",
+            "style_class": "button-custom",
+            "custom_button_background": "{{ settings.color_palette.color1 }}",
+            "custom_button_text": "#FFFFFF",
+            "custom_button_border": "{{ settings.color_palette.color1 }}",
+            "label": "Join Now",
+            "integrated_button": false
+          }
+        },
+        "nl_socials": {
+          "type": "social-links",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/heravyn",
+            "tiktok_url": "https://www.tiktok.com/@heravyn",
+            "youtube_url": "https://www.youtube.com/@heravyn",
+            "facebook_url": "https://www.facebook.com/heravyn"
+          }
+        }
+      },
+      "block_order": [
+        "nl_tag",
+        "nl_heading",
+        "nl_subcopy",
+        "nl_form",
+        "nl_socials"
+      ],
+      "name": "t:names.section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.color2 }}",
+        "border": "none",
+        "border_radius": 16,
+        "padding-block-start": 64,
+        "padding-block-end": 64
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "hero_heravyn",
+    "shop_by_category",
+    "product_list_fa6P9H",
+    "brand_story_heravyn",
+    "newsletter_social_section"
   ]
 }

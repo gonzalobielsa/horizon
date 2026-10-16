@@ -14,7 +14,7 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "group_wErUQf": {
+        "group_newsletter": {
           "type": "group",
           "settings": {
             "content_direction": "column",
@@ -32,55 +32,37 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
             "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_pF6rVi": {
+            "text_heading": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Join our email list</h2>",
+                "text": "<h3>Join the HERAVYN Movement</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h3",
-                "font": "var(--font-body--family)",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "background": false
               },
               "blocks": {}
             },
-            "text_HafH7P": {
+            "text_subcopy": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Get exclusive deals and early access to new products.</p>",
+                "text": "<p>Receive exclusive strength guides, private collection drops, and wellness inspiration. STRONGER YOU begins here.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -91,100 +73,88 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "background": false
               },
               "blocks": {}
             },
-            "email-signup_HafH7P": {
+            "email_signup": {
               "type": "email-signup",
               "name": "t:names.email_signup",
               "settings": {
                 "width": "fill",
                 "custom_width": 100,
-                "heading": "",
-                "heading_preset": "h3",
                 "border_style": "all",
                 "input_style": "custom",
                 "border_width": 1,
                 "border_radius": 100,
-                "input_background_color": "{{ settings.color_palette.color1 }}",
-                "input_border_color": "",
+                "input_background_color": "{{ settings.color_palette.background }}",
+                "input_border_color": "{{ settings.color_palette.color3 }}",
                 "input_type_preset": "paragraph",
-                "style_class": "button-secondary",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.color1 }}",
+                "custom_button_text": "#FFFFFF",
+                "custom_button_border": "{{ settings.color_palette.color1 }}",
                 "display_type": "text",
-                "label": "Sign up",
+                "label": "Subscribe",
                 "integrated_button": false,
-                "button_type_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "button_type_preset": "paragraph"
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "text_pF6rVi",
-            "text_HafH7P",
-            "email-signup_HafH7P"
+            "text_heading",
+            "text_subcopy",
+            "email_signup"
           ]
         },
-        "menu_footer": {
-          "type": "menu",
-          "settings": {
-            "menu": "footer",
-            "heading": "",
-            "menu_spacing": 12,
-            "show_as_accordion": false,
-            "accordion_icon": "plus",
-            "accordion_dividers": false,
-            "heading_preset": "paragraph",
-            "link_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          }
-        },
-        "menu_main": {
+        "menu_shop": {
           "type": "menu",
           "settings": {
             "menu": "main-menu",
-            "heading": "",
+            "heading": "Shop",
             "menu_spacing": 12,
             "show_as_accordion": false,
             "accordion_icon": "plus",
             "accordion_dividers": false,
-            "heading_preset": "paragraph",
-            "link_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "heading_preset": "h6",
+            "link_preset": "paragraph"
+          }
+        },
+        "menu_care": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "heading": "Customer Care",
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "plus",
+            "accordion_dividers": false,
+            "heading_preset": "h6",
+            "link_preset": "paragraph"
+          }
+        },
+        "payment_icons": {
+          "type": "payment-icons",
+          "settings": {
+            "horizontal_alignment": "flex-start",
+            "gap": 10
           }
         }
       },
       "block_order": [
-        "group_wErUQf",
-        "menu_footer",
-        "menu_main"
+        "group_newsletter",
+        "menu_shop",
+        "menu_care",
+        "payment_icons"
       ],
       "name": "t:names.footer",
       "settings": {
         "section_width": "page-width",
         "gap": 40,
-        "background_color": "{{ settings.color_palette.color1 }}",
-        "padding-block-start": 36,
-        "padding-block-end": 36
+        "background_color": "{{ settings.color_palette.color2 }}",
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "utilities": {
@@ -193,7 +163,7 @@
         "copyright": {
           "type": "footer-copyright",
           "settings": {
-            "show_powered_by": true,
+            "show_powered_by": false,
             "font_size": "0.75rem",
             "case": "none"
           }
@@ -208,11 +178,10 @@
         "social_icons": {
           "type": "social-links",
           "settings": {
-            "facebook_url": "https://www.facebook.com",
-            "instagram_url": "https://www.instagram.com",
-            "youtube_url": "https://www.youtube.com",
-            "tiktok_url": "https://www.tiktok.com",
-            "twitter_url": "https://www.twitter.com"
+            "instagram_url": "https://www.instagram.com/heravyn",
+            "tiktok_url": "https://www.tiktok.com/@heravyn",
+            "youtube_url": "https://www.youtube.com/@heravyn",
+            "facebook_url": "https://www.facebook.com/heravyn"
           }
         }
       },
@@ -224,10 +193,11 @@
       "settings": {
         "section_width": "page-width",
         "gap": 24,
-        "background_color": "{{ settings.color_palette.color1 }}",
+        "background_color": "{{ settings.color_palette.color2 }}",
         "divider_thickness": 1,
-        "padding-block-start": 12,
-        "padding-block-end": 16
+        "divider_color": "{{ settings.color_palette.color3 }}",
+        "padding-block-start": 16,
+        "padding-block-end": 20
       }
     }
   },
