@@ -49,8 +49,40 @@
           unset_image_tag: unset_image_tag
         %}
       {% else %}
+        {% liquid
+          assign fallback_media = nil
+          if block.id contains 'strength'
+            assign fallback_media = 'cat-strength.jpg'
+          elsif block.id contains 'pilates'
+            assign fallback_media = 'cat-pilates.jpg'
+          elsif block.id contains 'home'
+            assign fallback_media = 'cat-home.jpg'
+          elsif block.id contains 'recovery'
+            assign fallback_media = 'cat-recovery.jpg'
+          elsif block.id contains 'dumbbells'
+            assign fallback_media = 'prod-dumbbells.jpg'
+          elsif block.id contains 'bands'
+            assign fallback_media = 'prod-bands.jpg'
+          elsif block.id contains 'mat'
+            assign fallback_media = 'prod-mat.jpg'
+          elsif block.id contains 'roller'
+            assign fallback_media = 'prod-roller.jpg'
+          else
+            assign fallback_media = 'hero-cover.jpg'
+          endif
+        %}
         <div class="media-block__media border-style">
-          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'media-block__placeholder' }}
+          {% if fallback_media != blank %}
+            <img
+              src="{{ fallback_media | asset_url }}"
+              alt="HERAVYN Fitness"
+              class="media-block__placeholder"
+              style="object-fit: cover; width: 100%; height: 100%;"
+              loading="lazy"
+            >
+          {% else %}
+            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'media-block__placeholder' }}
+          {% endif %}
         </div>
       {% endif %}
     {% endcapture %}
@@ -74,7 +106,13 @@
     %}
   {%- else -%}
     <div class="media-block__media border-style">
-      {{ 'hero-apparel-3' | placeholder_svg_tag }}
+      <img
+        src="{{ 'hero-cover.jpg' | asset_url }}"
+        alt="HERAVYN Fitness"
+        class="media-block__placeholder"
+        style="object-fit: cover; width: 100%; height: 100%;"
+        loading="lazy"
+      >
     </div>
   {%- endif -%}
 </div>

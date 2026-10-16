@@ -36,13 +36,43 @@
     }}
   </image-block>
 {% else %}
+  {% liquid
+    assign fallback_asset = nil
+    if block.id contains 'strength'
+      assign fallback_asset = 'cat-strength.jpg'
+    elsif block.id contains 'pilates'
+      assign fallback_asset = 'cat-pilates.jpg'
+    elsif block.id contains 'home'
+      assign fallback_asset = 'cat-home.jpg'
+    elsif block.id contains 'recovery'
+      assign fallback_asset = 'cat-recovery.jpg'
+    elsif block.id contains 'dumbbells'
+      assign fallback_asset = 'prod-dumbbells.jpg'
+    elsif block.id contains 'bands'
+      assign fallback_asset = 'prod-bands.jpg'
+    elsif block.id contains 'mat'
+      assign fallback_asset = 'prod-mat.jpg'
+    elsif block.id contains 'roller'
+      assign fallback_asset = 'prod-roller.jpg'
+    endif
+  %}
   <image-block
     ratio="{{ block_settings.ratio }}"
     height="{{ block_settings.height }}"
     style="--border-radius: {{ block_settings.border_radius }}px;"
     {{ block.shopify_attributes }}
   >
-    {{ placeholder | default: 'hero-apparel-2' | placeholder_svg_tag: 'image-block__placeholder' }}
+    {% if fallback_asset != blank %}
+      <img
+        src="{{ fallback_asset | asset_url }}"
+        alt="{{ alt | default: 'HERAVYN' }}"
+        class="image-block__image"
+        style="width: 100%; height: 100%; object-fit: cover;"
+        loading="{{ loading | default: 'lazy' }}"
+      >
+    {% else %}
+      {{ placeholder | default: 'hero-apparel-2' | placeholder_svg_tag: 'image-block__placeholder' }}
+    {% endif %}
   </image-block>
 {% endif %}
 

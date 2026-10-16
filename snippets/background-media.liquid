@@ -124,11 +124,34 @@
         | image_tag: sizes: sizes, widths: widths, loading: loading, fetchpriority: fetch_priority
       }}
     {%- else -%}
-      {%- assign placeholder_name = placeholder | default: 'hero-apparel-2' -%}
-      {%- if placeholder_name == blank -%}
-        {%- assign placeholder_name = 'hero-apparel-2' -%}
+      {% liquid
+        assign fallback_bg = nil
+        if block.id contains 'strength'
+          assign fallback_bg = 'cat-strength.jpg'
+        elsif block.id contains 'pilates'
+          assign fallback_bg = 'cat-pilates.jpg'
+        elsif block.id contains 'home'
+          assign fallback_bg = 'cat-home.jpg'
+        elsif block.id contains 'recovery'
+          assign fallback_bg = 'cat-recovery.jpg'
+        elsif section.id contains 'hero'
+          assign fallback_bg = 'hero-cover.jpg'
+        endif
+      %}
+      {%- if fallback_bg != blank -%}
+        <img
+          src="{{ fallback_bg | asset_url }}"
+          alt="HERAVYN Fitness"
+          loading="lazy"
+          style="object-fit: cover; width: 100%; height: 100%;"
+        >
+      {%- else -%}
+        {%- assign placeholder_name = placeholder | default: 'hero-apparel-2' -%}
+        {%- if placeholder_name == blank -%}
+          {%- assign placeholder_name = 'hero-apparel-2' -%}
+        {%- endif -%}
+        {{ placeholder_name | placeholder_svg_tag }}
       {%- endif -%}
-      {{ placeholder_name | placeholder_svg_tag }}
     {%- endif -%}
   </div>
 {% endif %}

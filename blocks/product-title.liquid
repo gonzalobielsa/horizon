@@ -1,5 +1,21 @@
 {% if closest.product == blank %}
-  {% assign text = 'placeholders.product_title' | t %}
+  {% liquid
+    assign block_parts = block.id | split: '-'
+    assign placeholder_index = block_parts.last | default: 0
+    assign variant = placeholder_index | modulo: 4 | plus: 1
+    case variant
+      when 1
+        assign text = 'Sculpt Cast Iron Dumbbells (Pair)'
+      when 2
+        assign text = 'Form & Flow Fabric Resistance Bands'
+      when 3
+        assign text = 'Align Studio Pilates & Yoga Mat'
+      when 4
+        assign text = 'Relief Contoured Massage Roller'
+      else
+        assign text = 'Sculpt Cast Iron Dumbbells (Pair)'
+    endcase
+  %}
   {% assign product_title = '<p role="heading" aria-level="3">' | append: text | append: '</p>' %}
   {% render 'text', fallback_text: product_title, block: block %}
 {% else %}

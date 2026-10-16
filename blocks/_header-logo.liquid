@@ -55,14 +55,24 @@
     {% endif %}
     data-testid="header-logo"
   >
-    {% render 'image',
-      image: settings.logo,
-      class: 'header-logo__image',
-      height: settings.logo_height,
-      alt_text_fallback: alt_text_fallback,
-      text_fallback: shop.name,
-      style: logo_style
-    %}
+    {% if settings.logo != blank %}
+      {% render 'image',
+        image: settings.logo,
+        class: 'header-logo__image',
+        height: settings.logo_height,
+        alt_text_fallback: alt_text_fallback,
+        text_fallback: shop.name,
+        style: logo_style
+      %}
+    {% else %}
+      <img
+        src="{{ 'heravyn-logo.svg' | asset_url }}"
+        alt="{{ shop.name | default: 'HERAVYN' }} — STRONGER YOU."
+        class="header-logo__image"
+        style="height: {{ settings.logo_height | default: 36 }}px; width: auto; max-width: 200px; object-fit: contain; display: block;"
+        loading="eager"
+      >
+    {% endif %}
   </span>
 
   {% if use_inverse_logo %}
@@ -70,14 +80,24 @@
       class="header-logo__transparent-header-image-container"
       data-testid="header-logo-inverse"
     >
-      {% render 'image',
-        image: inverse_logo,
-        class: 'header-logo__image',
-        height: settings.logo_height,
-        alt_text_fallback: alt_text_fallback,
-        text_fallback: shop.name,
-        style: inverse_logo_style
-      %}
+      {% if inverse_logo != blank %}
+        {% render 'image',
+          image: inverse_logo,
+          class: 'header-logo__image',
+          height: settings.logo_height,
+          alt_text_fallback: alt_text_fallback,
+          text_fallback: shop.name,
+          style: inverse_logo_style
+        %}
+      {% else %}
+        <img
+          src="{{ 'heravyn-logo.svg' | asset_url }}"
+          alt="{{ shop.name | default: 'HERAVYN' }} — STRONGER YOU."
+          class="header-logo__image"
+          style="height: {{ settings.logo_height | default: 36 }}px; width: auto; max-width: 200px; object-fit: contain; display: block; filter: brightness(0) invert(1);"
+          loading="eager"
+        >
+      {% endif %}
     </span>
   {% endif %}
 </a>

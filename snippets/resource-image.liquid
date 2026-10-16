@@ -183,7 +183,27 @@
       {% if content_type == 'articles' %}
         {{ placeholder_name | placeholder_svg_tag: 'blog-placeholder-svg' }}
       {% else %}
-        {{ placeholder_name | placeholder_svg_tag }}
+        {% liquid
+          case variant
+            when 1
+              assign collection_fallback = 'cat-strength.jpg'
+            when 2
+              assign collection_fallback = 'cat-pilates.jpg'
+            when 3
+              assign collection_fallback = 'cat-home.jpg'
+            when 4
+              assign collection_fallback = 'cat-recovery.jpg'
+            else
+              assign collection_fallback = 'cat-strength.jpg'
+          endcase
+        %}
+        <img
+          src="{{ collection_fallback | asset_url }}"
+          alt="HERAVYN Collection"
+          class="resource-image__image"
+          style="object-fit: cover; width: 100%; height: 100%;"
+          loading="lazy"
+        >
       {% endif %}
     </div>
   </div>

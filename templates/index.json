@@ -267,12 +267,13 @@
                 "custom_height": 100,
                 "background_media": "none",
                 "border": "none",
-                "border_radius": 12,
+                "border_radius": 16,
                 "link": "shopify://collections/strength",
-                "padding-block-start": 28,
-                "padding-block-end": 28,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-block-start": 16,
+                "padding-block-end": 20,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16,
+                "background_color": "{{ settings.color_palette.color2 }}"
               },
               "blocks": {
                 "t1_heading": {
@@ -300,9 +301,19 @@
                     "link": "shopify://collections/strength",
                     "style_class": "button-unstyled"
                   }
+                },
+                "img_strength": {
+                  "type": "image",
+                  "settings": {
+                    "image_ratio": "portrait",
+                    "border_radius": 12,
+                    "width": "100%",
+                    "link": "shopify://collections/strength"
+                  }
                 }
               },
               "block_order": [
+                "img_strength",
                 "t1_heading",
                 "t1_sub",
                 "t1_btn"
@@ -326,12 +337,13 @@
                 "custom_height": 100,
                 "background_media": "none",
                 "border": "none",
-                "border_radius": 12,
+                "border_radius": 16,
                 "link": "shopify://collections/pilates-glutes",
-                "padding-block-start": 28,
-                "padding-block-end": 28,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-block-start": 16,
+                "padding-block-end": 20,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16,
+                "background_color": "{{ settings.color_palette.color2 }}"
               },
               "blocks": {
                 "t2_heading": {
@@ -359,9 +371,19 @@
                     "link": "shopify://collections/pilates-glutes",
                     "style_class": "button-unstyled"
                   }
+                },
+                "img_pilates": {
+                  "type": "image",
+                  "settings": {
+                    "image_ratio": "portrait",
+                    "border_radius": 12,
+                    "width": "100%",
+                    "link": "shopify://collections/pilates-glutes"
+                  }
                 }
               },
               "block_order": [
+                "img_pilates",
                 "t2_heading",
                 "t2_sub",
                 "t2_btn"
@@ -385,12 +407,13 @@
                 "custom_height": 100,
                 "background_media": "none",
                 "border": "none",
-                "border_radius": 12,
+                "border_radius": 16,
                 "link": "shopify://collections/home-workouts",
-                "padding-block-start": 28,
-                "padding-block-end": 28,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-block-start": 16,
+                "padding-block-end": 20,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16,
+                "background_color": "{{ settings.color_palette.color2 }}"
               },
               "blocks": {
                 "t3_heading": {
@@ -418,9 +441,19 @@
                     "link": "shopify://collections/home-workouts",
                     "style_class": "button-unstyled"
                   }
+                },
+                "img_home": {
+                  "type": "image",
+                  "settings": {
+                    "image_ratio": "portrait",
+                    "border_radius": 12,
+                    "width": "100%",
+                    "link": "shopify://collections/home-workouts"
+                  }
                 }
               },
               "block_order": [
+                "img_home",
                 "t3_heading",
                 "t3_sub",
                 "t3_btn"
@@ -444,12 +477,13 @@
                 "custom_height": 100,
                 "background_media": "none",
                 "border": "none",
-                "border_radius": 12,
+                "border_radius": 16,
                 "link": "shopify://collections/recovery",
-                "padding-block-start": 28,
-                "padding-block-end": 28,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
+                "padding-block-start": 16,
+                "padding-block-end": 20,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16,
+                "background_color": "{{ settings.color_palette.color2 }}"
               },
               "blocks": {
                 "t4_heading": {
@@ -477,9 +511,19 @@
                     "link": "shopify://collections/recovery",
                     "style_class": "button-unstyled"
                   }
+                },
+                "img_recovery": {
+                  "type": "image",
+                  "settings": {
+                    "image_ratio": "portrait",
+                    "border_radius": 12,
+                    "width": "100%",
+                    "link": "shopify://collections/recovery"
+                  }
                 }
               },
               "block_order": [
+                "img_recovery",
                 "t4_heading",
                 "t4_sub",
                 "t4_btn"
@@ -861,13 +905,491 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
+    },
+    "smart_trust_bar": {
+      "type": "section",
+      "blocks": {
+        "trust_grid": {
+          "type": "group",
+          "name": "Trust Pillars",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "stretch",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 8,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "trust_1": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 6,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p1_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>STUDIO-GRADE DURABILITY</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-heading--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "p1_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Solid recycled cast iron and high-tensile fabric weaves built for lifetime performance.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p1_title",
+                "p1_text"
+              ]
+            },
+            "trust_2": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 6,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p2_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>WOMEN'S ERGONOMIC FIT</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-heading--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "p2_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Proportioned knurling and grip contours engineered specifically for female hands.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p2_title",
+                "p2_text"
+              ]
+            },
+            "trust_3": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 6,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p3_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>COMPLIMENTARY SHIPPING</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-heading--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "p3_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Free express delivery on orders over $150 with same-day order dispatch.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p3_title",
+                "p3_text"
+              ]
+            },
+            "trust_4": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-start",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 6,
+                "width": "custom",
+                "custom_width": 25,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fill",
+                "custom_height": 100,
+                "background_media": "none",
+                "border": "none",
+                "border_radius": 12,
+                "padding-block-start": 16,
+                "padding-block-end": 16,
+                "padding-inline-start": 16,
+                "padding-inline-end": 16
+              },
+              "blocks": {
+                "p4_title": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>30-DAY RITUAL TRIAL</strong></p>",
+                    "type_preset": "h6",
+                    "font": "var(--font-heading--family)",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  }
+                },
+                "p4_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Experience HERAVYN in your home space with seamless, prepaid returns.</p>",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem"
+                  }
+                }
+              },
+              "block_order": [
+                "p4_title",
+                "p4_text"
+              ]
+            }
+          },
+          "block_order": [
+            "trust_1",
+            "trust_2",
+            "trust_3",
+            "trust_4"
+          ]
+        }
+      },
+      "block_order": [
+        "trust_grid"
+      ],
+      "name": "Trust Pillars",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.color2 }}",
+        "border": "none",
+        "border_radius": 16,
+        "padding-block-start": 20,
+        "padding-block-end": 20
+      }
+    },
+    "smart_marquee_ticker": {
+      "type": "marquee",
+      "blocks": {
+        "mq_text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>STRONGER YOU.</strong> &nbsp;&bull;&nbsp; INTENTIONAL MOVEMENT &nbsp;&bull;&nbsp; STUDIO-GRADE DURABILITY &nbsp;&bull;&nbsp; PURPOSE-BUILT FOR WOMEN &nbsp;&bull;&nbsp; ELEVATE YOUR ROUTINE &nbsp;&bull;&nbsp;</p>",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "1.25rem",
+            "line_height": "tight",
+            "letter_spacing": "wide",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "width": "fit-content",
+            "text_color": "#FAF7F3"
+          }
+        }
+      },
+      "block_order": [
+        "mq_text_1"
+      ],
+      "name": "Brand Marquee",
+      "settings": {
+        "movement_direction": "reverse",
+        "background_color": "#252525",
+        "padding-block-start": 16,
+        "padding-block-end": 16,
+        "gap_between_elements": 32
+      }
+    },
+    "faq_heravyn": {
+      "type": "section",
+      "blocks": {
+        "faq_header": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "border": "none",
+            "padding-block-start": 0,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "faq_title": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Frequently Asked Questions</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)"
+              }
+            },
+            "faq_subtitle": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Everything you need to know about starting and advancing your HERAVYN ritual.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)"
+              }
+            }
+          },
+          "block_order": [
+            "faq_title",
+            "faq_subtitle"
+          ]
+        },
+        "faq_accordion": {
+          "type": "accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true
+          },
+          "blocks": {
+            "faq_row_1": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I choose the right equipment to start with?",
+                "open_by_default": true,
+                "icon": "none"
+              },
+              "blocks": {
+                "faq_row_1_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If you are beginning your functional strength journey, we recommend starting with our Sculpt Dumbbells (pair) combined with the Form & Flow Fabric Resistance Bands. For dedicated mat work, core sculpting, and flexibility routines, our Align Studio Mat provides the ideal foundation.</p>",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_row_1_text"
+              ]
+            },
+            "faq_row_2": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Is HERAVYN equipment suitable for apartments and small spaces?",
+                "open_by_default": false,
+                "icon": "none"
+              },
+              "blocks": {
+                "faq_row_2_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. Every HERAVYN piece is engineered with compact living in mind. Our dumbbells feature non-marking, floor-safe matte cast iron, our mats roll into an ultra-slim profile with a natural leather strap, and our resistance sets nest neatly into a breathable travel pouch.</p>",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_row_2_text"
+              ]
+            },
+            "faq_row_3": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What materials are used in HERAVYN products?",
+                "open_by_default": false,
+                "icon": "none"
+              },
+              "blocks": {
+                "faq_row_3_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We source only high-grade, sustainable, and skin-friendly materials: eco-certified biodegradable natural tree rubber, hypoallergenic cotton-elastane fabric weaves that never pinch or snap, and solid recycled cast iron with chip-resistant matte powder coats.</p>",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_row_3_text"
+              ]
+            },
+            "faq_row_4": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How does the 30-Day Ritual Trial work?",
+                "open_by_default": false,
+                "icon": "none"
+              },
+              "blocks": {
+                "faq_row_4_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Experience HERAVYN in your daily routine for 30 full days. If our craftsmanship and ergonomics do not exceed your expectations, simply reach out to our concierge support team for a seamless, prepaid return and complete refund.</p>",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_row_4_text"
+              ]
+            },
+            "faq_row_5": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What are your shipping and delivery timelines?",
+                "open_by_default": false,
+                "icon": "none"
+              },
+              "blocks": {
+                "faq_row_5_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We offer complimentary tracked express delivery on all orders over $150. Orders placed before 2 PM EST are dispatched same day and arrive within 2–4 business days across the continental US and Canada.</p>",
+                    "type_preset": "rte"
+                  }
+                }
+              },
+              "block_order": [
+                "faq_row_5_text"
+              ]
+            }
+          },
+          "block_order": [
+            "faq_row_1",
+            "faq_row_2",
+            "faq_row_3",
+            "faq_row_4",
+            "faq_row_5"
+          ]
+        }
+      },
+      "block_order": [
+        "faq_header",
+        "faq_accordion"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
     "hero_heravyn",
+    "smart_trust_bar",
+    "smart_marquee_ticker",
     "shop_by_category",
     "product_list_fa6P9H",
     "brand_story_heravyn",
+    "faq_heravyn",
     "newsletter_social_section"
   ]
 }
